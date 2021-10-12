@@ -23,7 +23,7 @@ let questions = [
     {
         "questionId": 3,
         "question": "Wer entdeckte den amerikanischen Kontinent?",
-        "answer_1": "Christopher Kolumbus",
+        "answer_1": "C. Kolumbus",
         "answer_2": "Lady Gaga",
         "answer_3": "Michael Ballack",
         "answer_4": "Barack Obama",
@@ -88,7 +88,7 @@ let questions = [
     {
         "questionId": 10,
         "question": "Durch welche Branche wurde Heidi Klum berühmt?",
-        "answer_1": "Informationstechnologie",
+        "answer_1": "IT",
         "answer_2": "Gastronomie",
         "answer_3": "Mode",
         "answer_4": "Kanalreinigung",
@@ -279,6 +279,7 @@ function endTheGame() {
     newQuestions = false;
 
     document.getElementById('endScreen').style = '';
+    document.getElementById('endScreen').classList.remove('d-none');
     document.getElementById('questionBody').classList.add('d-none');
     document.getElementById('rightQuestions').innerHTML = rightQuestionsCounter;
     document.getElementById('all-questions2').innerHTML = randomQuestionArray.length;
