@@ -64,7 +64,7 @@ let questions = [
         "answer_2": "Corona",
         "answer_3": "Öttinger",
         "answer_4": "Orangensaft",
-        "right_answer": 3
+        "right_answer": 2
     },
     {
         "questionId": 8,
@@ -138,6 +138,52 @@ let questions = [
         "answer_3": "Uranus",
         "answer_4": "Pluto",
         "right_answer": 4
+    },
+
+    {
+        "questionId": 16,
+        "question": "Was ist der grösste Fisch der die Ozeane bevölkert?",
+        "answer_1": "Walhai",
+        "answer_2": "Blauwal",
+        "answer_3": "Weisser Hai",
+        "answer_4": "Orca",
+        "right_answer": 1
+    },
+    {
+        "questionId": 17,
+        "question": "Aus welchem Land stammt die Salami?",
+        "answer_1": "Griechenland",
+        "answer_2": "Italien",
+        "answer_3": "USA",
+        "answer_4": "Japan",
+        "right_answer": 2
+    },
+    {
+        "questionId": 18,
+        "question": "Wer war keiner der drei Musketiere?",
+        "answer_1": "Athos",
+        "answer_2": "Porthos",
+        "answer_3": "Aramis",
+        "answer_4": "Samaros",
+        "right_answer": 4
+    },
+    {
+        "questionId": 19,
+        "question": "Wer ist der Hauptdarsteller der Filmreihe Mission Impossible?",
+        "answer_1": "Tom Cruise",
+        "answer_2": "Brad Pitt",
+        "answer_3": "George Clooney",
+        "answer_4": "Will Smith",
+        "right_answer": 1
+    },
+    {
+        "questionId": 20,
+        "question": "Was ist kein Bauteil des Fahrwerks eines Autos?",
+        "answer_1": "Lenkrad",
+        "answer_2": "Stossdämpfer",
+        "answer_3": "Federn",
+        "answer_4": "Stabilisator",
+        "right_answer": 1
     }
 
 
@@ -153,6 +199,10 @@ let AUDIO_SUCCESS = new Audio('sounds/success.mp3');
 let AUDIO_WRONG = new Audio('sounds/wrong.mp3');
 let AUDIO_END = new Audio('sounds/end.mp3');
 
+
+/**
+ * function to create an array to create an array with random numbers between 0 and the length of the question array
+ */
 function createRandomNumberArray() {
     randomNumberArray = [];
     let counter = 0;
